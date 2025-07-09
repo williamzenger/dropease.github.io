@@ -5,117 +5,315 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DropEase - Delivery Made Easy</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>   
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">DropEase</div>
-            <ul>
+            <div class="logo">
+                <i class="fas fa-truck"></i>
+                DropEase
+            </div>
+            <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
     <main>
         <section id="hero">
-            <h1>Route Optimization for Delivery Drivers</h1>
-            <p>Save time and deliver more with DropEase</p>
-            <a href="#" class="cta-button">Start Free Trial</a>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Route Optimization for <span class="highlight">Delivery Drivers</span></h1>
+                    <p>Save time, reduce fuel costs, and deliver more with our intelligent route optimization platform</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="cta-button primary">Start Free Trial</a>
+                        <a href="#how-it-works" class="cta-button secondary">Learn More</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">30%</span>
+                            <span class="stat-label">Time Saved</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">25%</span>
+                            <span class="stat-label">Fuel Reduction</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="route-visualization">
+                            <div class="route-point start"></div>
+                            <div class="route-line"></div>
+                            <div class="route-point stop"></div>
+                            <div class="route-line"></div>
+                            <div class="route-point stop"></div>
+                            <div class="route-line"></div>
+                            <div class="route-point end"></div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Optimized Route</h3>
+                            <p>4 stops • 12.3 miles • 45 min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="features">
-            <h2>Features</h2>
+            <div class="section-header">
+                <h2>Powerful Features for Modern Delivery</h2>
+                <p>Everything you need to streamline your delivery operations</p>
+            </div>
             <div class="feature-grid">
                 <div class="feature-item">
-                    <i class="fas fa-route"></i>
-                    <h3>Route Optimization</h3>
-                    <p>Get the fastest route for all your stops</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Smart Route Optimization</h3>
+                    <p>AI-powered algorithms find the fastest route for all your stops, considering traffic and delivery windows</p>
                 </div>
                 <div class="feature-item">
-                    <i class="fas fa-map-marked-alt"></i>
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
                     <h3>Real-time GPS Tracking</h3>
-                    <p>Track your drivers and deliveries in real-time</p>
+                    <p>Track your drivers and deliveries in real-time with live updates and ETA notifications</p>
                 </div>
                 <div class="feature-item">
-                    <i class="fas fa-clock"></i>
-                    <h3>Proof of Delivery</h3>
-                    <p>Capture signatures and photos for each delivery</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-signature"></i>
+                    </div>
+                    <h3>Digital Proof of Delivery</h3>
+                    <p>Capture signatures, photos, and notes for each delivery with timestamp verification</p>
                 </div>
                 <div class="feature-item">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Driver App</h3>
-                    <p>Easy-to-use mobile app for drivers</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Driver Mobile App</h3>
+                    <p>Intuitive mobile app for drivers with offline capabilities and voice navigation</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Comprehensive insights into delivery performance, driver efficiency, and cost savings</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Customer Notifications</h3>
+                    <p>Automated SMS and email notifications keep customers informed about their deliveries</p>
                 </div>
             </div>
         </section>
 
         <section id="how-it-works">
-            <h2>How It Works</h2>
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Get started in three simple steps</p>
+            </div>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <p>Add your stops</p>
+                    <div class="step-content">
+                        <h3>Import Your Stops</h3>
+                        <p>Upload your delivery addresses via CSV, API, or manual entry</p>
+                    </div>
+                </div>
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <p>Optimize your route</p>
+                    <div class="step-content">
+                        <h3>Optimize Routes</h3>
+                        <p>Our AI instantly calculates the most efficient route for your deliveries</p>
+                    </div>
+                </div>
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <p>Start delivering</p>
+                    <div class="step-content">
+                        <h3>Start Delivering</h3>
+                        <p>Send routes to drivers and track progress in real-time</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="pricing">
-            <h2>Pricing</h2>
+            <div class="section-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the plan that fits your business needs</p>
+            </div>
             <div class="pricing-grid">
                 <div class="pricing-item">
-                    <h3>Basic</h3>
-                    <p class="price">$20/month</p>
-                    <ul>
-                        <li>Up to 10 stops per day</li>
-                        <li>Route optimization</li>
-                        <li>Driver app</li>
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">29</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="pricing-description">Perfect for small delivery operations</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>Up to 100 stops per day</li>
+                        <li><i class="fas fa-check"></i>Route optimization</li>
+                        <li><i class="fas fa-check"></i>Driver mobile app</li>
+                        <li><i class="fas fa-check"></i>Basic analytics</li>
+                        <li><i class="fas fa-check"></i>Email support</li>
                     </ul>
-                    <a href="#" class="cta-button">Choose Plan</a>
+                    <a href="#" class="cta-button outline">Choose Starter</a>
+                </div>
+                <div class="pricing-item featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">79</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="pricing-description">Ideal for growing delivery businesses</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>Unlimited stops</li>
+                        <li><i class="fas fa-check"></i>Advanced route optimization</li>
+                        <li><i class="fas fa-check"></i>Driver mobile app</li>
+                        <li><i class="fas fa-check"></i>Real-time GPS tracking</li>
+                        <li><i class="fas fa-check"></i>Proof of delivery</li>
+                        <li><i class="fas fa-check"></i>Advanced analytics</li>
+                        <li><i class="fas fa-check"></i>Customer notifications</li>
+                        <li><i class="fas fa-check"></i>Priority support</li>
+                    </ul>
+                    <a href="#" class="cta-button primary">Choose Professional</a>
                 </div>
                 <div class="pricing-item">
-                    <h3>Pro</h3>
-                    <p class="price">$50/month</p>
-                    <ul>
-                        <li>Unlimited stops</li>
-                        <li>Route optimization</li>
-                        <li>Driver app</li>
-                        <li>Real-time GPS tracking</li>
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="amount">Custom</span>
+                        </div>
+                        <p class="pricing-description">For large-scale delivery operations</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>Everything in Professional</li>
+                        <li><i class="fas fa-check"></i>Custom integrations</li>
+                        <li><i class="fas fa-check"></i>White-label solution</li>
+                        <li><i class="fas fa-check"></i>Dedicated account manager</li>
+                        <li><i class="fas fa-check"></i>24/7 phone support</li>
+                        <li><i class="fas fa-check"></i>SLA guarantee</li>
                     </ul>
-                    <a href="#" class="cta-button">Choose Plan</a>
+                    <a href="#" class="cta-button outline">Contact Sales</a>
                 </div>
             </div>
         </section>
 
         <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Ready to optimize your delivery operations? Contact us today for a personalized demo.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@dropease.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>San Francisco, CA</span>
+                        </div>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="company" placeholder="Company Name">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Tell us about your delivery needs" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button primary">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 DropEase. All rights reserved.(08182024)</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <i class="fas fa-truck"></i>
+                    DropEase
+                </div>
+                <p>Making delivery operations smarter, faster, and more efficient.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Integrations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Status</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DropEase. All rights reserved.</p>
+        </div>
     </footer>
 
+    <div id="notification-container"></div>
     <script src="script.js"></script>
 </body>
 </html>
