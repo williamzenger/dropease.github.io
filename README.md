@@ -25,7 +25,7 @@ A modern, responsive landing page for DropEase - an intelligent route optimizati
 
 ## 🚀 Live Demo
 
-Visit the live site: [DropEase Landing Page](#) *(Deploy to get live URL)*
+Visit the live site: [DropEase Landing Page](https://drop3ase.netlify.app/) *(Deploy to get live URL)*
 
 ## 🛠️ Technologies Used
 
