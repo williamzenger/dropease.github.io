@@ -215,7 +215,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or need help with the project:
 
-1. Check the [Issues](https://github.com/yourusername/dropease/issues) page
+1. Check the [Issues](https://github.com/williamzenger/dropease/issues) page
 2. Create a new issue if your problem isn't already listed
 3. Contact the maintainer directly
 
