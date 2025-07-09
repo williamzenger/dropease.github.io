@@ -187,7 +187,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **William Zeng**
 - GitHub: [@williamzenger](https://github.com/williamzenger)
 - LinkedIn: [William Zeng](https://linkedin.com/in/william-zeng-90325730/)
-- Email: your.email@example.com
+- Email: williamzenger@outlook.com
 
 ## 🙏 Acknowledgments
 
